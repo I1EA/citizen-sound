@@ -1,24 +1,29 @@
 {
   "expo": {
-    "name": "CitizenSound",
-    "slug": "CitizenSound",
+    "name": "Citizen Sound",
+    "slug": "citizen-sound",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+      "supportsTablet": true,
+      "bundleIdentifier": "com.citizensound.app",
+      "config": {
+        "googleMapsApiKey": "$GOOGLE_MAPS_API_KEY"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "package": "com.citizensound.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "$GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f23b6d52-2bdc-4a39-ad73-5fd60b132510"
+      }
     }
   }
 }
